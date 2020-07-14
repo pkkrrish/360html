@@ -1,0 +1,236 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script type="text/javascript" src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css'
+          media="screen" />
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .container .btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #3ba064;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+                .container .btn:hover {
+                    background-color: black;
+                }
+
+
+        .bton {
+            position: fixed;
+            top: 15%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btonr {
+            position: fixed;
+            top: 15%;
+            right: 15%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+
+
+
+
+
+    </style>
+    <script>
+        $(function () {
+            $("#opener").click(function () {
+                var title = "Greetings";
+                //var body = "Welcome to ASPSnippets.com";
+
+               // $("#MyPopup .modal-title").html(title);
+                // $("#MyPopup .modal-body").html(body);
+                $("#MyPopup").modal("show");
+            });
+
+            $("#openerfet").click(function () {
+                var title = "Greetings";
+                //var body = "Welcome to ASPSnippets.com";
+
+               // $("#MyPopupfeture .modal-title").html(title);
+                // $("#MyPopup .modal-body").html(body);
+                $("#MyPopupfeture").modal("show");
+            });
+        });
+    </script>
+    
+
+    <!--<script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            document.getElementById("pptshow").style.display = "none";
+            document.getElementById("vdo").style.display = "block";
+
+            myVideo.autoplay = true;
+            myVideo.load();
+
+            if (myVideo.paused)
+                myVideo.play();
+
+            else
+                myVideo.pause();
+        }
+
+        function showfeatures() {
+            document.getElementById("pptshow").style.display = "block";
+            document.getElementById("vdo").style.display = "none";
+
+        }
+
+    </script>-->
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <img src="imgip.jpeg" alt="Snow" style="width:100%; border-radius:10px">
+
+        <input type="image" id="opener" src="angle360.jpg" height="60px" onclick="playPause()" class="bton" />
+
+        <input type="image" id="openerfet" src="fetures.png" height="60px" onclick="showfeatures()" class="btonr" />
+        <!--<button class="btn">Button1</button>
+        <button class="btn">Button2</button>-->
+    </div>
+
+
+    <div id="MyPopup" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="vdo">
+                        <video id="video1" width="100%" controls autoplay>
+                            <source src="WhatsApp Video 2020-07-13 at 4.48.46 PM.mp4" type="video/mp4">
+                            <source src="WhatsApp Video 2020-07-13 at 4.48.46 PM.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="MyPopupfeture" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="ip.jpg" alt="Los Angeles" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="hotfoil.jpg" alt="Chicago" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="hotstamp.jpg" alt="New york" style="width:100%;">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
