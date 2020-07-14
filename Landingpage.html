@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script type="text/javascript" src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css'
+          media="screen" />
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+            .container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .container .btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: #3ba064;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+                .container .btn:hover {
+                    background-color: black;
+                }
+
+
+        .bton {
+            position: fixed;
+            top: 15%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btonr {
+            position: fixed;
+            top: 15%;
+            right: 15%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            window.location.href = "Imagerotateip.html";
+        }
+
+        function showfeatures() {
+
+            window.location.href = "Imagerotatefeatures.html";
+
+        }
+
+    </script>
+    <script>
+        $(function () {
+            $("#opener").click(function () {
+                var title = "Greetings";
+                //var body = "Welcome to ASPSnippets.com";
+
+                // $("#MyPopup .modal-title").html(title);
+                // $("#MyPopup .modal-body").html(body);
+                $("#MyPopup").modal("show");
+            });
+
+            $("#openerfet").click(function () {
+                var title = "Greetings";
+                //var body = "Welcome to ASPSnippets.com";
+
+                // $("#MyPopupfeture .modal-title").html(title);
+                // $("#MyPopup .modal-body").html(body);
+                $("#MyPopupfeture").modal("show");
+            });
+        });
+    </script>
+
+
+
+
+    <!--<script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            document.getElementById("pptshow").style.display = "none";
+            document.getElementById("vdo").style.display = "block";
+
+            myVideo.autoplay = true;
+            myVideo.load();
+
+            if (myVideo.paused)
+                myVideo.play();
+
+            else
+                myVideo.pause();
+        }
+
+        function showfeatures() {
+            document.getElementById("pptshow").style.display = "block";
+            document.getElementById("vdo").style.display = "none";
+
+        }
+
+    </script>-->
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <img src="imgip.jpeg" alt="imgip" style="width:100%; border-radius:10px">
+
+        <input type="image" id="opener" src="angle360.jpg" height="60px" onclick="playPause()" class="bton" />
+
+        <input type="image" id="openerfet" src="fetures.png" height="60px" onclick="showfeatures()" class="btonr" />
+        <!--<button class="btn">Button1</button>
+        <button class="btn">Button2</button>-->
+    </div>
+
+
+
+
+</body>
+</html>
